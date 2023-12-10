@@ -1,4 +1,4 @@
-package GitHubDeneme;
+package K30.GitHubDeneme;
 
 public class MyFirstProject {
     public static void main(String[] args) {
