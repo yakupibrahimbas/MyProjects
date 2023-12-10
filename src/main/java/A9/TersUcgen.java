@@ -4,22 +4,21 @@ import java.util.Scanner;
 
 public class TersUcgen {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner input=new Scanner(System.in);
-        System.out.println("kac satir ucgen olsun");
-        int number= input.nextInt();
+        System.out.print("Satır sayısını giriniz: ");
+        int satirSayisi = scanner.nextInt();
 
-        for (int i=1;i<=number;i++){
-            for (int j=1;j<=(i-1);j++){
-                System.out.println(" ");
+        for (int i = satirSayisi; i >= 1; i--) {
+            for (int j = 1; j <= satirSayisi - i; j++) {
+                System.out.print(" ");
             }
-            int starCount=(number+1)-i;
-            System.out.println(number-(i+1));
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
 
-
-
-
-
+        scanner.close();
     }
 }
