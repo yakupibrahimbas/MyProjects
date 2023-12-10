@@ -51,10 +51,41 @@ public class Example {
         for (int i=0;i<s1.length();i++){
             char ch=s1.charAt(i);
 //12
-            if (){
-
+            if (ch>='a'&&ch<='z'){
+                continue;
+            }else {
+                System.out.println(ch);
             }
         }
+        System.out.println("***********");
+      /*  //ornek 3: Verilen bir String'i tersden yazan kodu yaziniz. Meshur bit interwiew sorusu
+        //      String t = "Java"; ==> 'avaJ'
+        //son index her zaman length() - 1
+        String t = "Java";
+        String ters = ""; //ters cevrilmis yeni datayi burada saklayacagiz
+
+        for (int i = t.length()-1; i >= 0; i--) {
+            ters = ters + t.charAt(i);  //ters = ters + t.substring(i,i+1); de calisir
+        }
+        System.out.println(ters);//avaJ */
+        System.out.println("*********");
+
+        String t="Java";
+        String ters="";
+
+
+        for (int i=t.length()-1;i>=0;i--){
+            ters=ters+t.charAt(i);
+        }
+        System.out.println(ters);
+        System.out.println("----------");
+
+        int sum = 0;
+        for (int i = 578; i > 0; i = i / 10) {
+            sum = sum + i % 10;
+        }
+        System.out.println("sum = " + sum); //sum = 20
+
 
 
     }
