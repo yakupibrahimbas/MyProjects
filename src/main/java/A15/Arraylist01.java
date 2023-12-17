@@ -61,7 +61,7 @@ public class Arraylist01 {
         for (int i=0;i<r.size();i++){
             if (r.get(i).contains("a")){
                 r.remove(r.get(i));
-
+                i--;
             }
         }
         System.out.println(r);
