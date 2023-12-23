@@ -10,4 +10,6 @@ public class Car extends Vehicle{
         super();
         System.out.println("Car 2");
     }
+    public String model="Accord";
+    public int km=2000;
 }
