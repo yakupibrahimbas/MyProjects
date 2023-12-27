@@ -12,6 +12,7 @@ public class Lambda01 {
          */
 
         List<Integer>nums=new ArrayList<>(Arrays.asList(12,9,131,14,9,10,4,12,15));
+        System.out.println(nums);
 
 
     }
