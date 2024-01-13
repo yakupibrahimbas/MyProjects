@@ -1,6 +1,6 @@
 package O13;
 
-public class MultiDimensionalArray_o13 {
+public class MDA_O {
     public static void main(String[] args) {
         String[][] sehirler=new String[3][3];
         sehirler[0][0]="Istanbul";
